@@ -15,32 +15,39 @@
 
 <body>
 
-    <header>
-        <div class="header__wrapper">
-            <div class="container">
-                <nav class="header__nav">
-                    <div class="header__logo"><img class="logo-img" src="/img/logo.svg" alt="Logo"></div>
-                    <div class="header__nav">
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="header">
+
+                <img class="header-logo" src="/img/logo.svg" alt="Logo">
+                <div class="header__content">
+
+                    <nav class="header__nav">
                         <a href="#" class="header-nav__item">Главная</a>
                         <a href="#" class="header-nav__item">Тарифы</a>
                         <a href="#" class="header-nav__item">Возможности</a>
                         <a href="#" class="header-nav__item">Блог</a>
                         <a href="#" class="header-nav__item">Чаво</a>
-                        <a href="#" class="button button--header">Регистрация</a>
+                    </nav>
 
-                        <div class="dropdown">
-                            <div class="dropbtn">РУС</div>
-                            <div class="dropdown-content">
-                                <a href="#">РУС</a>
-                                <a href="#">EN</a>
-                            </div>
+                    <a href="#" class="button button--header">Регистрация</a>
+                    <div class="dropdown">
+                        <div class="dropbtn">РУС</div>
+                        <div class="dropdown-content">
+                            <a href="#">РУС</a>
+                            <a href="#">EN</a>
                         </div>
-
                     </div>
-                </nav>
+
+                </div>
             </div>
         </div>
     </header>
+
+
+
+
+
     <main>
         <div class="main__wrapper">
             <div class="container">
@@ -60,69 +67,82 @@
             <div class="opportunities__cards">
 
                 <div class="opportunities__card">
-                    <div class="card__img">
-                        <img src="/img/time-management.svg" alt="">
+                    <div class="opportunities__card-wrapper">
+                        <div class="card__img">
+                            <img src="/img/time-management.svg" alt="">
+                        </div>
+                        <h2 class="card__name">Распределяй работу</h2>
+                        <h2 class="card__title">Планирование смен</h2>
+                        <ul class="card__subscription">
+                            <li>Настраиваемые шаблоны смен</li>
+                            <li>Обмен сменами между сотрудниками</li>
+                            <li>Праздничные и особые дни</li>
+                            <li>Свободные смены</li>
+                            <li>Соблюдение трудового законодательства</li>
+                            <li>Синхронизация с календарем</li>
+                        </ul>
+
                     </div>
-                    <h2 class="card__name">Распределяй работу</h2>
-                    <h2 class="card__title">Планирование смен</h2>
-                    <ul class="card__subscription">
-                        <li>Настраиваемые шаблоны смен</li>
-                        <li>Обмен сменами между сотрудниками</li>
-                        <li>Праздничные и особые дни</li>
-                        <li>Свободные смены</li>
-                        <li>Соблюдение трудового законодательства</li>
-                        <li>Синхронизация с календарем</li>
-                    </ul>
-                    <button class="button button--card">Подробнее</button>
-                </div>
-                <div class="opportunities__card">
-                    <div class="card__img">
-                        <img src="/img/time-management2.svg" alt="">
-                    </div>
-                    <h2 class="card__name">Управляй и контролируй</h2>
-                    <h2 class="card__title">Контроль сотрудников</h2>
-                    <ul class="card__subscription">
-                        <li><span>Назначение задач</span> </li>
-                        <li><span>Создание контрольных списков</span> </li>
-                        <li><span>Отслеживание опозданий</span> </li>
-                        <li><span>Сравнение запланированных и завершенных задач</span> </li>
-                        <li><span>Отчеты об отработанных часах, зарплатах сотрудников и отпускным/больничным дням</span>
-                        </li>
-                    </ul>
-                    <button class="button button--card">Подробнее</button>
-                </div>
-                <div class="opportunities__card">
-                    <div class="card__img">
-                        <img src="/img/time-management3.svg" alt="">
-                    </div>
-                    <h2 class="card__name">Масштабируй</h2>
-                    <h2 class="card__title">Интеграции и неограниченный доступ</h2>
-                    <ul class="card__subscription">
-                        <li><span>Возможность интеграции</span> </li>
-                        <li><span>Доступ 24/7 с любого устройства с выходом в Интернет</span> </li>
-                        <li><span>Система уведомлений</span> </li>
-                        <li><span>Универсальность</span> </li>
-                    </ul>
-                    <button class="button button--card">Подробнее</button>
-                </div>
-                <div class="opportunities__card">
-                    <div class="card__img">
-                        <img src="/img/time-management4.svg" alt="">
-                    </div>
-                    <h2 class="card__name">Планируй и составляй прогнозы</h2>
-                    <h2 class="card__title">Оценки и прогнозы</h2>
-                    <ul class="card__subscription">
-                        <li><span>Планирование перерывов</span> </li>
-                        <li><span>Планирование отпусков</span> </li>
-                        <li><span>Безопасное хранение документов</span> </li>
-                    </ul>
                     <button class="button button--card">Подробнее</button>
                 </div>
 
+                <div class="opportunities__card">
+                    <div class="opportunities__card-wrapper">
+                        <div class="card__img">
+                            <img src="/img/time-management2.svg" alt="">
+                        </div>
+                        <h2 class="card__name">Управляй и контролируй</h2>
+                        <h2 class="card__title">Контроль сотрудников</h2>
+                        <ul class="card__subscription">
+                            <li><span>Назначение задач</span> </li>
+                            <li><span>Создание контрольных списков</span> </li>
+                            <li><span>Отслеживание опозданий</span> </li>
+                            <li><span>Сравнение запланированных и завершенных задач</span> </li>
+                            <li><span>Отчеты об отработанных часах, зарплатах сотрудников и отпускным/больничным
+                                    дням</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button class="button button--card">Подробнее</button>
+                </div>
+
+                <div class="opportunities__card">
+                    <div class="opportunities__card-wrapper">
+                        <div class="card__img">
+                            <img src="/img/time-management3.svg" alt="">
+                        </div>
+                        <h2 class="card__name">Масштабируй</h2>
+                        <h2 class="card__title">Интеграции и неограниченный доступ</h2>
+                        <ul class="card__subscription">
+                            <li><span>Возможность интеграции</span> </li>
+                            <li><span>Доступ 24/7 с любого устройства с выходом в Интернет</span> </li>
+                            <li><span>Система уведомлений</span> </li>
+                            <li><span>Универсальность</span> </li>
+                        </ul>
+                    </div>
+                    <button class="button button--card">Подробнее</button>
+                </div>
+
+                <div class="opportunities__card">
+                    <div class="opportunities__card-wrapper">
+                        <div class="card__img">
+                            <img src="/img/time-management4.svg" alt="">
+                        </div>
+                        <h2 class="card__name">Планируй и составляй прогнозы</h2>
+                        <h2 class="card__title">Оценки и прогнозы</h2>
+                        <ul class="card__subscription">
+                            <li><span>Планирование перерывов</span> </li>
+                            <li><span>Планирование отпусков</span> </li>
+                            <li><span>Безопасное хранение документов</span> </li>
+                        </ul>
+                    </div>
+                    <button class="button button--card">Подробнее</button>
+                </div>
             </div>
         </section>
     </div>
-    
+
     <div class="schedule__wrapper">
         <div class="container">
             <h2 class="schedule__title">Автоматизированное создание онлайн расписаний
@@ -176,17 +196,19 @@
 
     <div class="container">
         <section class="video">
-            <h2 class="video__title">Shifton - автоматизированный сервис планирования расписаний</h2>
+            <h2 class="video__title">Shifton - автоматизированный <br> сервис планирования расписаний</h2>
             <div class="video__content">
-                <img src="/img/video.jpg" alt="" class="video__img">
+                <div class="video__link">
+                    <iframe class="iframe-video" width="1000" height="562" src="https://www.youtube.com/embed/u_axUycRh2U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p class="video__contact">Остались вопросы? С радостью на них ответим!
                     Пишите в чат или на почту <a href="#">support@shifton.com</a>
                 </p>
                 <div class="video__social">
                     <a href="#" class="video__btn"><img src="/img/fb.svg" alt="facebook" class="fb"></a>
-                    <a href="#" class="video__btn"><img src="/img/tw.svg" alt="twitter" class="tw"></a>
+                    <a href="#" class="video__btn"><img src="/img/Twitter.svg" alt="twitter" class="tw"></a>
                     <a href="#" class="video__btn"><img src="/img/Linkedin.svg" alt="linkedin" class="in"></a>
-                    <a href="#" class="video__btn"><img src="/img/yout.svg" alt="youtube" class="youtube"></a>
+                    <a href="#" class="video__btn"><img src="/img/Youtube.svg" alt="youtube" class="youtube"></a>
 
                 </div>
             </div>

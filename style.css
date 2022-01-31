@@ -6,11 +6,21 @@
 html {
     font-family: "Inter", sans-serif;
 }
+
 .container {
     max-width: 1276px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.body{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -30,25 +40,25 @@ html {
     cursor: pointer;
 }
 /*Header*/
-.header__wrapper {
+.header-wrapper {
     background-color: #080702;
 }
-
-.header__nav {
+.header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 27px;
-    padding-right: 199px;
-    max-width: 1601px;
-    margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 12px;
 }
+.header__content{
+    display: flex;
+    align-items: center;
+}
+.header__nav {
+margin-right: 23px;
 
+}
 .header-nav__item {
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -58,26 +68,18 @@ html {
     text-decoration: none;
     color: #ffffff;
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 31px;
+    margin-right: 31px;
 }
-
+.header-nav__item:last-child{
+    margin-right: 0;
+}
 .button--header {
-    display: inline-flex;
-    align-items: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
     line-height: 23px;
-    text-decoration: none;
     color: #ffffff;
     background: #29aae3;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
     border-radius: 26px;
-    padding: 12px 18px;
-    margin: 0px 10px;
+    margin-right: 23px;
 }
 .button--header:active {
     background: #9033f9;
@@ -87,26 +89,30 @@ html {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    
 }
 .dropbtn::after{
     content: '▼';
     color: white;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 50px;
-    
+    margin-left: 3px;
 }
 
 .dropbtn {
     color: #f1f1f1;
-    padding-left: 23px;
-    width: 35px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    
 }
 
 .dropdown-content a {
@@ -115,6 +121,12 @@ html {
     padding: 15px 25px;
     text-decoration: none;
     display: block;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
 .dropdown-content a:hover {
@@ -135,9 +147,6 @@ html {
 }
 
 .main__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 48px;
     line-height: 56px;
     color: #ffffff;
@@ -145,17 +154,14 @@ html {
     margin-bottom: 32px;
 }
 .main__subscription {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 26px;
     line-height: 30px;
     color: #ffffff;
     max-width: 655px;
     margin-bottom: 16px;
 }
-
 .button--main {
+    padding: 12px 30px;
     background-color: #54a757;
     margin-top: 32px;
 }
@@ -172,35 +178,35 @@ html {
 .opportunities__title {
     display: flex;
     justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
     color: #434449;
 }
 .opportunities__cards {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 70px;
 }
 .opportunities__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 310px;
-    height: 602px;
     background: #f9f9f9;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding-left: 26px;
     padding-right: 13px;
+    padding-bottom: 21px;
+}
+.opportunities__card-wrapper{
+    margin-bottom: 40px;
 }
 .card__img {
     margin-top: 32px;
 }
 .card__name {
     list-style: none;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -208,9 +214,6 @@ html {
     margin-bottom: 19px;
 }
 .card__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     color: #434449;
@@ -218,7 +221,7 @@ html {
 }
 .card__subscription {
     list-style: none;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -230,6 +233,7 @@ html {
 }
 .button--card {
     background-color: #54a757;
+    align-self: baseline;
 }
 .button--card:active {
     background-color: #0062cc;
@@ -258,9 +262,6 @@ html {
 }
 .schedule__title {
     text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
     color: #29aae3;
@@ -278,6 +279,7 @@ html {
 .schedule__img {
     margin-top: 40px;
 }
+
 /*Team*/
 
 .team__wrapper {
@@ -287,9 +289,6 @@ html {
 
 .team__title {
     text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
     color: #9033f9;
@@ -329,9 +328,6 @@ html {
 
 .break__title {
     text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
     color: #ff5966;
@@ -359,7 +355,7 @@ html {
     transition: background 0.3s;
 }
 .break__img {
-    margin-left: 267px;
+    
 }
 
 /*Video part*/
@@ -372,9 +368,6 @@ html {
 }
 .video__title {
     text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -384,38 +377,51 @@ html {
 .video__content {
     text-align: center;
 }
-.video__img {
+.video_link {
     margin-bottom: 100px;
+    flex-grow: 1000px;
 }
 .video__contact {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 26px;
     line-height: 50px;
     text-align: center;
     color: #434449;
     white-space: pre-line;
 }
+
 .video__contact a {
     color: #29aae3;
     text-decoration: none;
 }
 .video__social {
-    display: inline-flex;
-    justify-content: space-between;
     margin-top: 60px;
 }
 .video__btn {
-    background-color: transparent;
-    border: none;
-    width: 50.56px;
-    height: 50.56px;
-    margin-right: 25.93px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #9033f9;
+    border-radius: 100%;
+    padding: 16px 15px;
+    margin-right: 25px;  
+}
+.video__btn:first-child{
+    padding: 14px 20px;
+    background-color: #3D5A96;
 }
 .video__btn:last-child {
     margin-right: 0;
 }
+.video__btn:nth-child(2) {
+    background-color: #2AA3EF;
+}
+.video__btn:nth-child(3){
+    background-color: #007AB7;
+}
+.video__btn:nth-child(4){
+    background-color: #F52929;
+}
+
+
 /*Footer*/
 .footer__wrapper {
     background-color: #53a8dd;
@@ -432,9 +438,6 @@ html {
 }
 .navigation__item {
     text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     color: #ffffff;
@@ -452,19 +455,11 @@ html {
     margin-right: 8px;
 }
 .footer__copyright {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
     line-height: 30px;
     text-align: center;
     color: #ffffff;
 }
 .footer__copyright a {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
     line-height: 30px;
     text-align: center;
     color: #ffffff;
@@ -472,4 +467,4 @@ html {
     border-right: 1px solid;
     margin-right: 10px;
     padding-right: 10px;
-}
+/*
